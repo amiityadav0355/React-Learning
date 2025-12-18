@@ -1,0 +1,15 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+}
+
+.calculator {
+  border: 1px solid rgba(90, 90, 90);
+  width: 200px;
+  border-radius: 5px;
+  text-align: center;
+}
