@@ -4,8 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
-import CreatePost from "./components/CreatePost";
-import PostList from "./components/PostList";
+import { Outlet } from "react-router-dom";
 import PostListProvider from "./store/post-list-store";
 
 function App() {
@@ -20,11 +19,7 @@ function App() {
         ></Sidebar>
         <div className="content">
           <Header></Header>
-          {selectedTab === "Home" ? (
-            <PostList></PostList>
-          ) : (
-            <CreatePost></CreatePost>
-          )}
+          <Outlet/>
           <Footer></Footer>
         </div>
       </div>
